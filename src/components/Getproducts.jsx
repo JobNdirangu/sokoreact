@@ -47,9 +47,11 @@ const Getproducts = () => {
     // const user=JSON.parse(localStorage.getItem("user"))
 
   return (
+    <div>
+      <Carouselcomponent />
+
     <div className="row container-fluid">
       {/* <p>Welcome: {user.username}</p> */}
-      <Carouselcomponent />
       <span className="text-info">{loading}</span>
       <span className="text-danger">{error}</span>
       <h3>Available Products</h3>
@@ -62,7 +64,7 @@ const Getproducts = () => {
           placeholder="Search Products..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-        />
+          />
       </div>
 
       {/* Display Filtered Products */}
@@ -93,7 +95,8 @@ const Getproducts = () => {
         ))}
       {/* ) : (
         <p className="text-center text-danger">No products found.</p>
-      )} */}
+        )} */}
+    </div>
     </div>
   );
 };

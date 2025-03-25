@@ -12,6 +12,9 @@ import Pagenotfound from './components/Pagenotfound';
 import Makepayment from './components/Makepayment';
 import Navbarcomp from './components/Navbarcomp';
 import { useEffect, useState } from 'react';
+import Aboutus from './components/Aboutus';
+import Carouselcomponent from './components/Carouselcomponent';
+import Footercomp from './components/Footercomp';
 
 function App() {
   const [user, setUser] = useState("");
@@ -35,10 +38,14 @@ function App() {
         <Route path='/signin' element={<Signin setUser={setUser}/>}/>
         <Route path='/addproduct' element={<Addproduct/>}/>
         <Route path='/makepayment' element={<Makepayment/>}/>
+        <Route path='/aboutus' element={<Aboutus/>}/>
         {/* Default component */}
         <Route path='/' element={<Getproducts/>}/>
         <Route path='*' element={<Pagenotfound/>}/>
       </Routes>
+      <div>
+        <Footercomp/>
+      </div>
     </Router>
   );
 }

@@ -44,14 +44,9 @@ const Addproduct = () => {
 
   return (
     <div className="row justify-content-center mt-4">
-      <nav className="mt-3 mb-1 p-3 text-center">
-            <Link className="btn btn-dark me-3" to={"/"}>Home</Link>            
-            <Link className="btn btn-secondary me-3" to={"/addproduct"}>Add Products</Link>            
-            <Link className="btn btn-dark me-3" to={"/signin"}>Sign In</Link>            
-            <Link className="btn btn-dark me-3" to={"/signup"}>Sign Up</Link>            
-        </nav> 
-        <hr /> 
+       
       <div className="card shadow col-md-6  p-4 text-center">
+        <h3>Add Products</h3>
         <form onSubmit={submit}>
           <span className="text-info ">{loading}</span>
           <span className="text-success ">{success}</span>

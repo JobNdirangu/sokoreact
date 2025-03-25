@@ -42,3 +42,10 @@
   width: 100%;
   height: 150px;
 }
+.about_img {
+  object-fit: cover; /* Crops and fills the area while maintaining aspect ratio */
+  width: 100%; /* Full width of the container */
+  height: auto; /* Automatically adjusts height to keep proportions */
+  max-height: 300px; /* Limits the height */
+  border-radius: 8px; /* Optional: Adds rounded corners for a polished look */
+}

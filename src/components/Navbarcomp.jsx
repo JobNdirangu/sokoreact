@@ -26,6 +26,7 @@ const Navbarcomp = ({search,setSearch,user,setUser}) => {
                      <div className="collapse navbar-collapse" id="navbarcollapse">
                         <div className="navbar-nav  w-100">
                             <Link  to="/" className="nav-link active">Home</Link>
+                            <Link to={"/aboutus"} className="nav-link">About Us</Link>
                             
                             {   user? ( 
                                     <>  
@@ -42,24 +43,10 @@ const Navbarcomp = ({search,setSearch,user,setUser}) => {
 
                                 )
                             }
-                            
-
-                            <div className="ms-auto d-flex align-items-center">
                                 
-                                <form className="d-flex" role="search">
-                                    <input
-                                        className="form-control me-2"
-                                        type="search"
-                                        placeholder="Search"
-                                        aria-label="Search"
-                                        value={search}
-                                        onChange={(e) => setSearch(e.target.value)}
-                                    />
-                                    <button className="btn btn-outline-success" type="submit">
-                                        Search
-                                    </button>
-                                </form>
-                            </div>                            
+
+
+                                                        
 
                         </div>
                      </div>
